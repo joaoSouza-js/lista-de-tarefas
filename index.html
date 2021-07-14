@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a62bdac644.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Criando um titulo -->
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+        <!--Essa div (newTask) significa "nova tarefa".Que quando precionada abre um locar onde serão adicionadas novas informaçôes -->
+        <div id="newTask" onclick="createNewTask.active()">
+            <p>
+                Nova tarefa +
+            </p>
+        </div>
+        <section class="tarefa">
+
+            <div class="placeInput">
+                <p>
+                    Nome da Tarefa
+                    <input type="text" id="task"></p>
+            </div>
+            <div class="placeInput">
+                <p>
+                    Data de Entrega <input type="date" id="date">
+                </p>
+            </div>
+            <div id="safe" >
+
+                <input type="button" value="salvar" id="safe" onclick="save()">
+
+                <input type="button" onclick="createNewTask.remove()" id="cancel" value="cancelar">
+            </div>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de entrega</th>
+                    <th>Concluio?</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>
+                        <p>Fazer o relátório</p>
+                    </td>
+                    <td>2/2/2021</td>
+
+                    <td>
+                        <label for="yes">
+                            <input type="radio" id="yes"name="conclusion">
+                            sim
+                        </label>
+
+                        <label for="no">
+                            <input type="radio" id="no" name="conclusion">
+                            não
+                        </label>
+                    </td>
+                    <td>
+                        <i class="fas fa-trash" ></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

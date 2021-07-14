@@ -1,0 +1,7 @@
+
+.tarefa.active{
+    display: block;
+}
+.tarefa{
+    display: none;
+}
