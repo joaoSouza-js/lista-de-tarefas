@@ -1,7 +1,182 @@
+/*Gobal==============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 
+*{
+    border: 0;
+    padding: 0;
+    margin:  0;
+    font-family: var(--fontPrincipal)
+}
+:root{
+    --fontPrincipal: 'Poppins','sans-serif','serif';
+    --blue: #3cc0e8;
+    --ligthBlue: #3ff2ec;
+    --green1: #43dbac;
+    --green2: #24d3a7;
+    --green4: #28fd7d;
+
+}
+/*global===============*/
+/*header===============*/
+header{
+    background: linear-gradient(45deg,var(--blue),var(--ligthBlue));
+    color: #fff;
+    padding: 15px;
+    text-align: center
+
+}
+header h1{
+    text-shadow: 2px 1px 1px var(--ligthBlue);
+}
+
+/*header============== */
+
+/*newTask============== */
+#newTask{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    font-size: 1.3em;
+}
+#newTask p{
+    position: relative;
+    top: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+#newTask p:hover {
+    color: gray;
+}
+/*tarefa===========*/
 .tarefa.active{
-    display: block;
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    align-items: center;
+
+
 }
 .tarefa{
     display: none;
+}
+
+.tarefa #container{
+    width: min(500px, 90%);
+    margin: 0 auto;
+    
+    text-align: center;
+}
+/*tarefa===========*/
+
+/*container===========*/
+#container{
+    background: linear-gradient(45deg,var(--blue),var(--ligthBlue));
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px
+}
+#container p{
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 20px 0px;
+    color: white;
+}
+/*container=========*/
+
+/*input============*/
+input{
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 20px;
+    width: 40%;
+    font-weight: 400;
+    text-shadow:  1px 0px 1px rgba(92, 92, 92, 0.185);
+}
+
+/*input=============*/
+/*button=============*/
+#button{
+    margin: 20px auto 15px auto;
+}
+#button input{
+    width: 30%;
+    margin: 0 auto;
+    margin: 0 20px;
+    font-size: 1.4em;
+}
+#button input:nth-of-type(1){
+    background-color: #19d400;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+#button input:nth-of-type(1):hover{
+    opacity: 0.6;
+}
+#button input:nth-of-type(2){
+    box-sizing: border-box;
+    background-color: rgb(255, 9, 9);
+    color: #fff;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+#button input:nth-of-type(2):hover{
+    opacity: 0.8;
+}
+/*table============== */
+table{
+    max-width: 800px;
+    width: 90%;
+    margin: 10% auto 0px auto;
+    padding:  20px;
+    background-color: var(--ligthBlue);
+    border-radius: 6px;
+    border-spacing: 0;
+    
+}
+thead,tbody{
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+td,th{
+    padding: 8px;
+}
+
+td:nth-of-type(2),td:nth-of-type(4){
+    text-align: center;
+}
+th:nth-of-type(3){
+    text-align: right;
+
+}
+th:nth-of-type(4){
+    border-top-right-radius: 6px;
+
+}
+tr:last-child td:nth-of-type(4){
+    border-bottom-right-radius: 6px;
+}
+th:nth-of-type(1){
+    border-top-left-radius: 6px;
+}
+tr:last-child td:nth-of-type(1){
+    border-bottom-left-radius: 6px;
+}
+label,label input{
+    cursor: pointer;
+}
+td:nth-of-type(3) label:nth-of-type(2){
+    color: #ff0000;
+}
+/*table============== */
+span{
+    color: #19d400;
 }

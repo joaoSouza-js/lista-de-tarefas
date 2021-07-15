@@ -23,21 +23,25 @@
         </div>
         <section class="tarefa">
 
-            <div class="placeInput">
-                <p>
-                    Nome da Tarefa
-                    <input type="text" id="task"></p>
-            </div>
-            <div class="placeInput">
-                <p>
-                    Data de Entrega <input type="date" id="date">
-                </p>
-            </div>
-            <div id="safe" >
-
-                <input type="button" value="salvar" id="safe" onclick="save()">
-
-                <input type="button" onclick="createNewTask.remove()" id="cancel" value="cancelar">
+            <div id=container>
+                <div class="placeInput">
+                    <label for="task">
+                        <p>
+                            Nome da Tarefa
+                            <input type="text" id="task">
+                        </p>
+                    </label>
+                </div>
+                <div class="placeInput">
+                    <label for="date">
+                        <p>
+                            Data de Entrega <input type="date" id="date">
+                        </p>
+                    </label>              </div>
+                <div id="button" >
+                    <input type="button" value="Salvar" id="safe" onclick="save()">
+                    <input type="button" onclick="createNewTask.remove()" id="cancel" value="Cancelar">
+                </div>
             </div>
         </section>
         <table>
@@ -50,27 +54,7 @@
                 </tr>
             </thead>
             <tbody id="tbody">
-                <tr>
-                    <td>
-                        <p>Fazer o relátório</p>
-                    </td>
-                    <td>2/2/2021</td>
-
-                    <td>
-                        <label for="yes">
-                            <input type="radio" id="yes"name="conclusion">
-                            sim
-                        </label>
-
-                        <label for="no">
-                            <input type="radio" id="no" name="conclusion">
-                            não
-                        </label>
-                    </td>
-                    <td>
-                        <i class="fas fa-trash" ></i>
-                    </td>
-                </tr>
+                         </tr>
             </tbody>
         </table>
     </main>

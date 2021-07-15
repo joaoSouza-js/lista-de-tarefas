@@ -38,7 +38,7 @@ function contenTr(){
         <td>
             <label for="yes">
                 <input type="radio" id="yes"name="conclusion">
-                sim
+                <span>sim
             </label>
 
             <label for="no">
