@@ -180,3 +180,8 @@ td:nth-of-type(3) label:nth-of-type(2){
 span{
     color: #19d400;
 }
+@media screen and (min-width:800px){
+    #newTask{
+        top: 0;
+    }
+}
